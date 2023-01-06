@@ -25,4 +25,5 @@ These graphs shows the most common admit source, icu type and bodysystem amongst
 
 # Summary of Best Models
 ![Screenshot (5)](https://user-images.githubusercontent.com/108106393/211073168-643a4ff3-b8b8-4a25-bdec-d00825d58a0a.png)
- of Best Models
+
+# Logistic Regression
