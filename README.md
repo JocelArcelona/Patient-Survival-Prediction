@@ -9,10 +9,11 @@ This project aims to analyze and clean an existing dataset called Patient Surviv
 Maimonides Medical Center in Brooklyn is in need of a preliminary screening test to predict a patient's mortality after being admitted to the ICU
 
 # Data 
-This project used the Patient Survival Prediction Dataset from Kaggle.com
+This project used the Patient Survival Prediction Dataset from Kaggle.com. It contained 90,000 datapoints and 87 features.
 
 # Methods 
 Before modeling, I had to analyze, clean and filter my dataset. I dropped some duplicated rows and checked if the dataset was imbalanced. Since most of my numerical columns did not tell much, I used the categorical columns, calculated the percentages and visualized it using some graphs. After more analysis of the data, I separated the categorical from the nominal and numerical columns for preparation before plugging them into a column transformer. And before everything else, train test split. I used different pipelines for different types of classification models. Since I'm working on a predicting a patient's survival after admittance in the ICU, I used the metric recall score to determine the best classification model. A high recall score indicates a low amount of false negatives which in this case is what we want for our predictor. False Negatives pose a high risk considering that it's a misdiagnosis and a patient could die due to this. I also ran my models with some parameter tuning to find the parameters that works best for the model. I used multiple models starting with the simplest one, the Logistic Regression. I also used tree classifcation models like Decision Trees, Random Forest and XGBoost which came up with pretty good accuracy score. 
+I also ended up dropping icu death probability and hospital death probability due to data leakage since I'm predicting hospital deaths. 
 
 # Visualizations
 This graph shows the imbalance in my dataset, I added some sampling techniques on my pipelines to deal with this imbalance.
