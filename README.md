@@ -4,3 +4,25 @@
 
 # Objectives 
 This project aims to analyze and clean an existing dataset called Patient Survival Prediction. This dataset includes a patients basic information like their Age, BMI, weight and their vitals when they get admitted to the hospital. It also includes health and sickness information like if a patient is responsive, if they have known diseases that could contribute to their increased mortality rate. This also aims to figure out which features play the biggest role when it comes to identifying a patients mortality. After the identification of these features, we create, use and tune different classification models that produces the best recall score. We are focusing on recall in this dataset 
+
+# Business Problem
+Maimonides Medical Center in Brooklyn is in need of a preliminary screening test to predict a patient's mortality after being admitted to the ICU
+
+# Data 
+This project used the Patient Survival Prediction Dataset from Kaggle.com
+
+# Methods 
+Before modeling, I had to analyze, clean and filter my dataset. I dropped some duplicated rows and checked if the dataset was imbalanced. Since most of my numerical columns did not tell much, I used the categorical columns, calculated the percentages and visualized it using some graphs. After more analysis of the data, I separated the categorical from the nominal and numerical columns for preparation before plugging them into a column transformer. And before everything else, train test split. I used different pipelines for different types of classification models. Since I'm working on a predicting a patient's survival after admittance in the ICU, I used the metric recall score to determine the best classification model. A high recall score indicates a low amount of false negatives which in this case is what we want for our predictor. I also ran my models with some parameter tuning to find the parameters that works best for the model.
+
+# Visualizations
+This graph shows the imbalance in my dataset
+![hospdeath](https://user-images.githubusercontent.com/108106393/211072368-0ba7f991-36e0-41a6-9817-1e7333aab036.png)
+
+These graphs shows the most common admit source, icu type and bodysystem amongst all the patients who died
+!![icutype](https://user-images.githubusercontent.com/108106393/211072635-cba82c24-818c-472d-bccd-9053fc3b6dae.png)
+[ICUADMIT](https://user-images.githubusercontent.com/108106393/211072521-d73ce97f-9d65-4bdd-ba47-9804825c7338.png)
+![BO](https://user-images.githubusercontent.com/108106393/211072650-56483179-eb4f-488e-83d4-da5533ef7006.png)
+
+# Summary of Best Models
+![Screenshot (5)](https://user-images.githubusercontent.com/108106393/211073168-643a4ff3-b8b8-4a25-bdec-d00825d58a0a.png)
+ of Best Models
