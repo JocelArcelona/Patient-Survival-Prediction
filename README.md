@@ -19,10 +19,20 @@ I also ended up dropping icu death probability and hospital death probability du
 This graph shows the imbalance in my dataset, I added some sampling techniques on my pipelines to deal with this imbalance.
 ![hospdeath](https://user-images.githubusercontent.com/108106393/211072368-0ba7f991-36e0-41a6-9817-1e7333aab036.png)
 
+This graph shows that Age plays a vital role in predicting if a patient will die or not when they get admitted to the ICU 
+![agedist](https://user-images.githubusercontent.com/108106393/211089478-ccd08ef6-4494-4d89-9a77-3373703fee8c.png)
+
+
 These graphs shows the most common admit source, icu type and bodysystem amongst all the patients who died
+
 !![icutype](https://user-images.githubusercontent.com/108106393/211072635-cba82c24-818c-472d-bccd-9053fc3b6dae.png)
+Out of all the patients who died, 56% were admitted to the medical surgery ICU
+
 [ICUADMIT](https://user-images.githubusercontent.com/108106393/211072521-d73ce97f-9d65-4bdd-ba47-9804825c7338.png)
+60% of the patients who died were admitted to accident and emergency
+
 ![BO](https://user-images.githubusercontent.com/108106393/211072650-56483179-eb4f-488e-83d4-da5533ef7006.png)
+And the most prevalent bodysystem where the complications were found amongst the patients who died was cardiovascular, which is not surprising because according to the CDC, heart related diseases are the top leading cause of death worldwide.
 
 # Summary of Best Models
 ![Screenshot (5)](https://user-images.githubusercontent.com/108106393/211073168-643a4ff3-b8b8-4a25-bdec-d00825d58a0a.png)
