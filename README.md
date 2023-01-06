@@ -12,7 +12,7 @@ Maimonides Medical Center in Brooklyn is in need of a preliminary screening test
 This project used the Patient Survival Prediction Dataset from Kaggle.com
 
 # Methods 
-Before modeling, I had to analyze, clean and filter my dataset. I dropped some duplicated rows and checked if the dataset was imbalanced. Since most of my numerical columns did not tell much, I used the categorical columns, calculated the percentages and visualized it using some graphs. After more analysis of the data, I separated the categorical from the nominal and numerical columns for preparation before plugging them into a column transformer. And before everything else, train test split. I used different pipelines for different types of classification models. Since I'm working on a predicting a patient's survival after admittance in the ICU, I used the metric recall score to determine the best classification model. A high recall score indicates a low amount of false negatives which in this case is what we want for our predictor. I also ran my models with some parameter tuning to find the parameters that works best for the model.
+Before modeling, I had to analyze, clean and filter my dataset. I dropped some duplicated rows and checked if the dataset was imbalanced. Since most of my numerical columns did not tell much, I used the categorical columns, calculated the percentages and visualized it using some graphs. After more analysis of the data, I separated the categorical from the nominal and numerical columns for preparation before plugging them into a column transformer. And before everything else, train test split. I used different pipelines for different types of classification models. Since I'm working on a predicting a patient's survival after admittance in the ICU, I used the metric recall score to determine the best classification model. A high recall score indicates a low amount of false negatives which in this case is what we want for our predictor. False Negatives pose a high risk considering that it's a misdiagnosis and a patient could die due to this. I also ran my models with some parameter tuning to find the parameters that works best for the model.
 
 # Visualizations
 This graph shows the imbalance in my dataset
@@ -27,3 +27,9 @@ These graphs shows the most common admit source, icu type and bodysystem amongst
 ![Screenshot (5)](https://user-images.githubusercontent.com/108106393/211073168-643a4ff3-b8b8-4a25-bdec-d00825d58a0a.png)
 
 # Logistic Regression
+After using and tuning multiple classification models, logistic regression was the best model. It yielded a recall score of 78.8% and an AUC of 86.96%
+
+![confmat](https://user-images.githubusercontent.com/108106393/211087935-efbdcc48-e17a-4025-beee-d171e5b8ddb5.png)
+![roc](https://user-images.githubusercontent.com/108106393/211087963-57435897-7f8f-48d5-a3b5-a097dd8fdf5e.png)
+
+
