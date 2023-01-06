@@ -49,14 +49,14 @@ After using and tuning multiple classification models, logistic regression was t
 # Recommendations 
 Gather more data about a patient's:
 
-Lifestyle
+1. Lifestyle
 
-Type of Job
+2. Type of Job
 
-Medications
+3. Medications
 
-Reason of admittance
+4. Reason of admittance
 
-Non-elective surgery
+5. Non-elective surgery
 
 With more data about a patient, we can focus more on lowering false negatives and false positives at the same time considering that they are both misdiagnosis and could pose different risks for both the patient and the hospital involved.
