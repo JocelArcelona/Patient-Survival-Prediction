@@ -46,6 +46,9 @@ After using and tuning multiple classification models, logistic regression was t
 ![confmat](https://user-images.githubusercontent.com/108106393/211087935-efbdcc48-e17a-4025-beee-d171e5b8ddb5.png)
 ![roc](https://user-images.githubusercontent.com/108106393/211087963-57435897-7f8f-48d5-a3b5-a097dd8fdf5e.png)
 
+# Feature Importances
+![f](https://user-images.githubusercontent.com/108106393/211091358-f25cbdaa-2f41-46e3-a28a-37c2eeef052f.png)
+
 # Recommendations 
 Gather more data about a patient's:
 
